@@ -1,0 +1,54 @@
+.home-section {
+  padding: 100px 120px;
+  background: #ffffff;
+}
+
+/* GRID CONTAINER */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* INDIVIDUAL CARD */
+.home-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 40px;
+  background: #ffffff;
+  transition: all 0.35s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: #2563eb;
+}
+
+.card-line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #2563eb;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.home-card h3 {
+  font-size: 22px;
+  color: #0f2a44;
+  margin-bottom: 12px;
+}
+
+.home-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.home-card a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
