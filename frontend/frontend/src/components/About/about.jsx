@@ -6,6 +6,7 @@ import hospitalImg from "../../assets/about-us.jpg";
 const About = () => {
   return (
     <>
+      {/* about main page */}
       <div
         className="about-hero"
         style={{ backgroundImage: `url(${aboutbg})` }}
@@ -14,7 +15,7 @@ const About = () => {
           <h1>About Us</h1>
         </div>
       </div>
-
+        {/* about-content*/}
       <div className="about-content">
         <h4>
           We are committed to providing exceptional patient care and promoting
@@ -44,6 +45,8 @@ const About = () => {
           </p>
         </div>
       </div>
+
+        {/* vission mission */}
       <section className="vision-mission">
         <div className="vm-row">
           <div className="vm-title">VISION</div>

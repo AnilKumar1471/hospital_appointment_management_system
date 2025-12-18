@@ -11,6 +11,7 @@ import img5 from "../../assets/img5.jpg"
 const Services = () => {
     return (
         <>
+            {/* condition-image */}
             <div
                 className="condition-hero"
                 style={{ backgroundImage: `url(${bgimg})` }}
@@ -20,6 +21,7 @@ const Services = () => {
                 </div>
             </div>
 
+                {/* service-section */}
             <div className="services-section">
                 <h1>Patient Care and Services</h1>
                 <p className="services-desc">
@@ -60,6 +62,7 @@ const Services = () => {
                 </div>
             </div>
 
+            {/* book appointment */}
             <div className="cta-section">
                 <h2>
                     Take the first step towards better <br />
@@ -68,6 +71,7 @@ const Services = () => {
                 <button className="cta-btn">Book An Appointment</button>
             </div>
 
+            {/* info-section */}
             <div className="info-section">
                 <div className="info-grid">
                     <div className="info-card">
