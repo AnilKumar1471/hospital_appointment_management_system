@@ -1,0 +1,158 @@
+/* Emergency component */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.emerg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: white;
+  font-size:larger;
+}
+
+.emer_main {
+  background-color: #0a84ff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  
+}
+
+/* NavBar component */
+
+.nav-link{
+  color: gray;
+  text-decoration: none;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 32%;
+}
+
+.nav-link:hover{
+  color: #0a84ff;
+}
+
+.navbar{
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  border: none;
+}
+
+.logo-name{
+  position: relative;
+  left: 8%;
+}
+
+.apn-btn{
+  position: relative;
+  left: 45%;
+  padding: 15px 50px;
+  border-radius: 8px;
+  background-color: #0a84ff;
+  color: white;
+  border: none;
+}
+
+/* First in Home page */
+.first-bg{
+  background: url("../src/assets/home1.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  opacity: 0.8;
+  
+}
+
+
+.first-title{
+  font-size: 70px;
+  text-align: center;
+  color: white; 
+  position: relative;
+  top: 20%;
+}
+
+
+.first-para{
+  font-size: 25px;
+  text-align: center;
+  color:white;
+  position: relative;
+  top: 20%;
+}
+
+/* Footer component */
+
+.footer{
+  display: flex;
+  padding: 50px;
+}
+
+.footer-1{
+  margin-right: 100px;
+}
+
+.footer-2, .footer-3, .footer-4{
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  gap: 10px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: gray;
+}
+.footer a:hover{
+  color: #0a84ff;
+}
+
+.final-footer{
+  display: flex;
+  padding: 20px 45px;
+  
+}
+
+.final-footer a{
+  position: relative;
+  left: 70%;
+  text-decoration: none;
+  color: gray;
+}
+
+hr{
+  color: gray;
+}
+
+/* Semifooter */
+.semi-footer{
+  background-image: url("../src/assets/home3.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.semi-2{
+  display: flex;
+  color: white;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+  left: 15%;
+  gap: 50px;
+}
+
+.semi-1{
+  color: white;
+  position: relative;
+  top: 40%;
+  left: 8%;
+  font-size: 30px;
+}
