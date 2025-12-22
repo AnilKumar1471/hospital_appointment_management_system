@@ -1,11 +1,39 @@
 import React from "react";
 import "./about.css";
+import { NavLink } from "react-router-dom";
 import aboutbg from "../../assets/bg2.jpg";
 import hospitalImg from "../../assets/about-us.jpg";
 
 const About = () => {
   return (
     <>
+        {/* Emergency Component */}
+        <div className='emer_main'>
+            <p className='emerg'>Emergency Call: 040-123456</p>
+        </div>
+
+            {/* NavBar */}
+            <nav className='navbar'>
+                <p className='logo-name'>General <br /><b>Hospital</b></p>
+                <NavLink to="/" end className="nav-link">
+                    Home
+                </NavLink>
+
+                <NavLink to="/about" end className="nav-link">
+                    About
+                </NavLink>
+
+                <NavLink to="/services" end className="nav-link">
+                    Services
+                </NavLink>
+
+                <NavLink to="/contact" end className="nav-link">
+                    Contact
+                </NavLink>
+                <button  className='apn-btn'>
+                    <b>Book Appointment</b>
+                </button>
+            </nav>
       {/* about main page */}
       <div
         className="about-hero"
@@ -19,8 +47,8 @@ const About = () => {
       <div className="about-content">
         <h4>
           We are committed to providing exceptional patient care and promoting
-          wellness <br />in our community. We offer personalized care plans tailored
-          to <br />meet the unique needs of each patient.
+          wellness in our community. We offer personalized care plans tailored
+          to meet the unique needs of each patient.
         </h4>
       </div>
       <div className="about-details">
@@ -68,6 +96,79 @@ const About = () => {
           </div>
         </div>
       </section>
+
+       {/* semiFooter */}
+            <section className="help-section">
+                <div className="help-overlay">
+                    <div className="help-left">
+                        <h1>Need help?</h1>
+                        <p>
+                            Id sed suspendisse massa elit morbi odio justo vitae pharetra.
+                        <br />
+                            Sed nullam sit est scelerisque tincidunt pellentesque felis.
+                        </p>
+                    </div>
+
+                    <div className="help-right">
+                        <div>
+                            <span>For enquiries, please call</span>
+                            <h3>(406) 555-0120</h3>
+                        </div>
+
+                        <div className="divider"></div>
+
+                        <div>
+                            <span>For appointments</span>
+                            <h3>(406) 555-0120</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+
+            <footer className="footer">
+                <div className="footer-top">
+                    <div className="footer-brand">
+                        <p>GENERAL <br /><h3>HOSPITAL</h3></p>
+                        <p>
+                            1234 Washington Ave. Manchester,
+                            <br />
+                            Kentucky 39495.
+                        </p>
+                        <p>(406) 555-0120</p>
+                    </div>
+
+                    <div className="footer-col">
+                        <h4>Patient Information</h4>
+                        <a href="#">Find a Doctor</a>
+                        <a href="#">Health Library</a>
+                        <a href="#">Clinical Trials</a>
+                        <a href="#">Newsroom</a>
+                    </div>
+
+                    <div className="footer-col">
+                        <h4>Research & Education</h4>
+                        <a href="#">School of Medicine</a>
+                        <a href="#">Medical Education</a>
+                        <a href="#">Research</a>
+                        <a href="#">School of Nursing</a>
+                    </div>
+
+                    <div className="footer-col">
+                        <h4>For Health Professionals</h4>
+                        <a href="#">Transfer a patient</a>
+                        <a href="#">Mount Sinai Connect</a>
+                        <a href="#">Refer a Patient</a>
+                        <a href="#">Nursing</a>
+                    </div>
+                </div>
+
+                    <div className="footer-bottom">
+                        <span>© 2025 General Hospital</span>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+            </footer>
     </>
   );
 };

@@ -1,3 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width: 100%; */
+}
+
+/* Emergency Component */
+.emerg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: white;
+  font-size: larger;
+}
+
+.emer_main {
+  background-color: #0a84ff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 14px 40px;
+  gap: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo-name {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #0f2a44;
+  margin-right: 350px;
+  position: relative;
+  left: 100px;
+}
+
+.nav-link {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #0a84ff;
+}
+
+.nav-link.active {
+  color: #0a84ff;
+  font-weight: 600;
+}
+
+.apn-btn {
+  margin-left: 20px;
+  padding: 12px 32px;
+  border-radius: 8px;
+  background-color: #0a84ff;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  left: 300px;
+}
+
+.apn-btn:hover {
+  background-color: #006edc;
+}
+
+
+/* First in Home page */
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(15, 42, 68, 0.85),
+    rgba(15, 42, 68, 0.4)
+  );
+  display: flex;
+  align-items: center;
+  padding: 0 250px;
+}
+
+.hero-content {
+  max-width: 700px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4 0px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
 /* card-section */
 .home-section {
   padding: 100px 120px;
@@ -143,7 +268,7 @@
 
 .medical-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -171,7 +296,7 @@
 
 .medical-card-content h3 {
   font-size: 22px;
-  color:#0f2a44;
+  color: #0f2a44;
   margin-bottom: 12px;
 }
 
@@ -190,27 +315,27 @@
 
 /* book appointment */
 .cta-section {
-    background: #1488f5;
-    padding: 40px 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background: #1488f5;
+  padding: 40px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cta-section h2 {
-    color: white;
-    font-size: 36px;
-    font-weight: 600;
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .cta-btn {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 14px 24px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* why choose us */
@@ -317,4 +442,200 @@
   width: 100%;
   border-radius: 16px;
   object-fit: cover;
+}
+
+/* ReviewCard */
+.testimonials-section {
+  padding: 100px 120px;
+  background: #ffffff;
+}
+
+.testimonials-label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+
+.testimonials-heading {
+  font-size: 46px;
+  color: #0f2a44;
+  margin-bottom: 60px;
+}
+
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+
+.testimonial-card {
+  border: 1px solid #000;
+  border-radius: 14px;
+  padding: 40px;
+  background: #fff;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 30px;
+}
+
+/* User */
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-user span {
+  font-size: 15px;
+  color: #0f2a44;
+  font-weight: 500;
+}
+
+.testimonials-heading,
+.testimonials-label {
+  text-align: center;
+}
+
+.testimonial-card {
+  border: 1px solid #e5e7eb;
+}
+
+
+.testimonial-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Semifooter */
+.help-section {
+  background-size: cover;
+  background-image: url("../../assets/home3.jpg");
+  background-position: center;
+  color: white;
+}
+
+.help-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 100px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help-left h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.help-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 400px;
+}
+
+.help-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.help-right span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.help-right h3 {
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+.divider {
+  width: 1px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* FOOTER */
+.footer {
+  background: #ffffff;
+  padding: 80px 120px 30px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-brand img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #0f2a44;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.footer-col:hover a {
+  color: #006edc;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #334155;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #334155;
 }
