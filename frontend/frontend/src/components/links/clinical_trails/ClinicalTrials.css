@@ -77,61 +77,70 @@
   background-color: #006edc;
 }
 
-/* Health Library */
-.health-page {
-  background-color: #ffffff;
+/* clinical-trails */
+.health-library {
+  background-color: #f5f5f5;
 }
 
-.health-hero {
+.overlay {
   height: 350px;
-  background-image: url("../../../assets/paitent.jpg");
+  width: 100%;
+  background-image: url("../../../assets/clinical2.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 150px;
   position: relative;
 }
 
-.health-overlay {
-  height: 100%;
-  width: 100%;
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.55);
-  display: flex;
-  padding: 150px 250px;
 }
 
-.health-overlay h1 {
+.overlay h1 {
+  position: relative;
   color: #ffffff;
   font-size: 48px;
   font-weight: 700;
+  z-index: 1;
   letter-spacing: 1px;
 }
 
-.health-wrapper {
+.clinical-page {
+  background-color: #ffffff;
+}
+
+.clinical-wrapper {
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 20px;
 }
 
-.health-intro {
-  font-size: 25px;
+.clinical-intro {
+  font-size: 22px;
   color: #1f2d3d;
   text-align: center;
   margin-bottom: 40px;
   line-height: 1.6;
 }
 
-.health-image-box {
+.clinical-image-box {
   width: 100%;
   margin-bottom: 40px;
 }
 
-.health-image-box img {
+.clinical-image-box img {
   width: 100%;
   height: auto;
   border-radius: 14px;
   object-fit: cover;
 }
 
-.health-content p {
+.clinical-content p {
   font-size: 17px;
   color: #4a4a4a;
   line-height: 1.8;

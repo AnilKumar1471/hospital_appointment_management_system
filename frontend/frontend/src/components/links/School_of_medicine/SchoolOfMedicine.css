@@ -77,61 +77,60 @@
   background-color: #006edc;
 }
 
-/* Health Library */
-.health-page {
+/* School of Medicine */
+.school-page {
   background-color: #ffffff;
 }
 
-.health-hero {
+.school-hero {
   height: 350px;
-  background-image: url("../../../assets/paitent.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.health-overlay {
+.school-overlay {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.55);
   display: flex;
-  padding: 150px 250px;
+  padding: 150px 220px; 
 }
 
-.health-overlay h1 {
+.school-overlay h1 {
   color: #ffffff;
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.health-wrapper {
+.school-wrapper {
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 20px;
 }
 
-.health-intro {
-  font-size: 25px;
+.school-intro {
+  font-size: 29px;
   color: #1f2d3d;
   text-align: center;
   margin-bottom: 40px;
   line-height: 1.6;
 }
 
-.health-image-box {
+.school-image-box {
   width: 100%;
   margin-bottom: 40px;
 }
 
-.health-image-box img {
+.school-image-box img {
   width: 100%;
   height: auto;
   border-radius: 14px;
   object-fit: cover;
 }
 
-.health-content p {
+.school-content p {
   font-size: 17px;
   color: #4a4a4a;
   line-height: 1.8;
