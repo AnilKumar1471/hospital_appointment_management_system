@@ -11,19 +11,19 @@ import MedicalEducation from "./components/links/Medical_Education/MedicalEducat
 
 function App() {
   return (
-      <>
+    <>
 
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes> */}
+      </Routes>
       {/* <HealthLibrary/> */}
       {/* <ClinicalTrials/> */}
       {/* <Newsroom/> */}
       {/* <SchoolOfMedicine/> */}
-      <MedicalEducation/>
+      {/* <MedicalEducation/> */}
     </>
   );
 }
